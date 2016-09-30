@@ -1,0 +1,81 @@
+
+$c0: #ffa195;
+$c1: #fffa7e;
+$c2: #faa8ff;
+$c3: #ff6f6b;
+$c4: #9076ff;
+$c5: #80ffa2;
+$c6: #30d3ff;
+$c7: #ff208f;
+$c8: #ff571f;
+$c9: #10a0ff;
+.block{
+  background: $c5;
+  height: 50px;
+  width: 100px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+@for $i from 1 through 9 {
+
+  @if $i == 3 {
+    .block_c#{$i} {
+      background: $c0;
+
+    }
+  }
+  @if $i == 2 {
+    .block_c#{$i} {
+      background: $c1;
+
+    }
+  }
+  @if $i == 1 {
+    .block_c#{$i} {
+      background: $c2;
+
+    }
+  }
+  @if $i == 4 {
+    .block_c#{$i} {
+      background: $c4;
+
+    }
+  }
+  @if $i == 7 {
+    .block_c#{$i} {
+      background: $c7;
+
+    }
+  }
+  @if $i == 8 {
+    .block_c#{$i} {
+      background: $c8;
+
+    }
+  }
+  @if $i == 9 {
+    .block_c#{$i} {
+      background: $c9;
+
+    }
+  }
+  @if $i == 5 {
+    .block_c#{$i} {
+      background: $c5;
+
+    }
+  } @if $i ==6 {
+    .block_c#{$i} {
+      background: $c3;
+    }
+  }
+
+}
+.karcas{
+  display: flex;
+  flex-flow: row wrap;
+width: 300px;
+
+}
