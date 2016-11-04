@@ -21,15 +21,3 @@ var rezault =alignArray(mas);
  
  console.log(rezault);
   console.log(alignArray(mas3));
- 
- if(typeof  mas =='array'){
-	 alert('fff')
- }
- console.log( refggt instanceof Array);
- rezault = alignArray(mas);
- 
- 
- function is_array (a) {
-    return (a instanceof Array);
-}
-console.log(is_array(mas));
